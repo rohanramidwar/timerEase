@@ -17,6 +17,12 @@ body
     background: #240054;
 }
 
+.container
+{
+    display: flex;
+    align-items: center;
+}
+
 .num 
 {
     color: #740aff;
