@@ -10,10 +10,19 @@
 <body>
     <div class="container">
         <span id="countdown" class="num">10:00</span>
-        <span onclick="restart()" class="material-symbols-outlined restart">
+        <span id="play-id" class="material-symbols-outlined playPauseSet" onclick="playTimer()">
+            play_pause
+        </span>
+        <span id="pause-id" class="material-symbols-outlined playPauseSet pause" onclick="pauseTimer()">
+            play_pause
+            </span>
+            <span class="material-symbols-outlined playPauseSet" onclick="setTimer()">
+                timer
+                </span>
+        <span onclick="restartTimer()" class="material-symbols-outlined restart">
             refresh
             </span>
-    </div>
+        </div>
     <script src="scripts/timer.js"></script>
 </body>
 </html>
