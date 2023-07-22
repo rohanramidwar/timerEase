@@ -1,6 +1,6 @@
 let nintervalId;
 
-let startTime = 10;
+let startTime = 1;
 let time = startTime * 60;
 
 const countdownEl = document.getElementById("countdown");
@@ -16,7 +16,7 @@ function restartTimer()
 
 function setTimer()
 {
-    startTime = prompt("NET");
+    startTime = prompt("set timer(in minutes): ");
     time = startTime * 60;
     currentTime();
     playTimer();
@@ -59,9 +59,9 @@ function updateCountdown()
 
 function currentTime()
 {
-    const minutes = Math.floor(time / 60);
+    let minutes = Math.floor(time / 60);
     let seconds = time % 60;
-
+    minutes = (minutes<10) ? "0" + minutes : minutes;
     seconds = (seconds<10) ? "0" + seconds : seconds;
     countdownEl.innerHTML = `${minutes}:${seconds}`;
 }
