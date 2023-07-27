@@ -30,16 +30,15 @@ body
     font-size: 3em;
 }
 
-.restart
-{
-    color: #8f8f8f;
-    cursor: pointer;
-}
-
-.playPauseSet
+.material-symbols-outlined
 {
     color: #fff;
     cursor: pointer;
+}
+
+.restart
+{
+    color: #8f8f8f;
 }
 
 .pause
